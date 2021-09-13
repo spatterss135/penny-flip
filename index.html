@@ -8,10 +8,19 @@
 </head>
 <body>
     <main>
-        <H1>Penny Flip Game</H1>
+        <div class="nav">
+            <button id='penny-game'>Penny Flip</button>
+            <H1 id="game-title">Penny Flip Game</H1>
+            <button id='dice-game'>Dice Roll</button>
+        </div>
+        
         <div>
             <div>
-                <img src="assets/images/penny-heads.jpg" alt="">
+                
+                <div id="image-container">
+                    <!-- <div class="selector"></div> -->
+                    <!-- <img src="assets/images/penny-heads.jpg" alt=""> -->
+                </div>
                 <div class="buttons">
                     <button id='flip'>Flip the Penny!</button>
                     <button id='clear'>Clear Scoreboard</button>   
@@ -25,19 +34,19 @@
                 <h2>Scoreboard</h2>
                 <table>
                     <thead>
-                        <tr>
-                            <th>Number of Heads</th>
+                        <tr id='scoreboard-header'>
+                            <!-- <th>Number of Heads</th>
                             <th>Percentage Heads</th>
                             <th>Number of Tails</th>
-                            <th>Percentage Tails</th>
+                            <th>Percentage Tails</th> -->
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td id="heads">0</td>
+                        <tr id='scoreboard-data'>
+                            <!-- <td id="heads">0</td>
                             <td id="heads-percent">0%</td>
                             <td id="tails">0</td>
-                            <td id="tails-percent">0%</td>
+                            <td id="tails-percent">0%</td> -->
                         </tr>
                     </tbody>
                 </table>

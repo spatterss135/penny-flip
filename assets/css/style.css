@@ -7,10 +7,14 @@ body {
 
 body {
     min-height: 100vh;
+    min-width: 100vw;
     background: linear-gradient(to bottom left, orange, white);
+
 }
 
 main {
+    min-height: 100vh;
+    min-width: 100vw;
     background-color: white;
     margin: 20px;
     padding: 25px;
@@ -76,3 +80,61 @@ td {
     padding: 5px;
     font-weight: bold;
 }
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#image-container {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px auto;
+    width: 1400px;
+}
+
+.selector {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 22, 22, 0.534);
+    left: 1.8%;
+    z-index: 1;
+    
+
+}
+
+/* animation: diceAnimation .2s forwards 6.17; */
+/* animation: diceAnimation .2s forwards 6.33; */
+/* animation: diceAnimation .2s forwards 6.5; */
+/* animation: diceAnimation .2s forwards 6.66; */
+/* animation: diceAnimation .2s forwards 6.82; */
+
+@keyframes diceAnimation {
+    0% {
+        left: 1.8%;
+    }
+    16.67% {
+        left: 17.75%;
+    }
+    33% {
+        left:33.9%;
+    }
+    50% {
+        left:50%;
+    }
+    66% {
+        left:66%;
+    }
+    82% {
+        left: 83.5%;
+    }
+    100%{
+        left: 83.5%;
+    } 
+}
+
+/* 1.8%, 17.75%, 33.9%, 50%, 66$, 82.1% */
+
